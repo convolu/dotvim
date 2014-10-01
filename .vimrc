@@ -1,10 +1,5 @@
-" Enable syntax highlighting
-syntax on
-" Try to detect filetypes
-filetype on
-
-" Try loading indent file for filetype
-filetype plugin indent on
+call pathogen#infect()
+call pathogen#helptags()
 
 " Keep the same indent as the line I'm currently on
 set autoindent
@@ -25,3 +20,12 @@ set expandtab
 " Show whitespace characters
 set listchars=eol:$,trail:~
 set list
+
+" Enable syntax highlighting
+syntax on
+" Try to detect filetypes
+filetype on
+
+" Try loading indent file for filetype
+filetype plugin indent on
+
