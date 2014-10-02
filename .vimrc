@@ -20,7 +20,7 @@ set matchtime=5
 " Set indentation to 4 spaces
 set shiftwidth=4
 set softtabstop=4
-set expandtab 
+set expandtab
 
 " Show whitespace characters
 set listchars=eol:$,trail:~
@@ -47,3 +47,11 @@ let s:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/
 if isdirectory(s:clang_library_path)
     let g:clang_library_path=s:clang_library_path
 endif
+
+" Make it look nicer
+set background=dark
+try
+    colorscheme solarized
+catch
+    colorscheme desert
+endtry
