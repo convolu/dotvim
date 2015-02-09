@@ -13,3 +13,6 @@
 [submodule "bundle/colors-solarized"]
 	path = bundle/colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized
+[submodule "bundle/vim-flake8"]
+	path = bundle/vim-flake8
+	url = git@github.com:nvie/vim-flake8.git
