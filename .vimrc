@@ -32,6 +32,12 @@ set matchpairs=(:),{:},[:],<:>
 " Show info about current command
 set showcmd
 
+" Enable mouse scrolling where
+" set mouse=nicr
+
+" Enable mouse support (hold option to revert to old behaviour)
+set mouse=a
+
 
 " Enable syntax highlighting
 syntax on
