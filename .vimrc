@@ -23,7 +23,7 @@ set softtabstop=4
 set expandtab
 
 " Show whitespace characters
-set listchars=eol:$,trail:~
+set listchars=trail:~
 set list
 
 " Specify which characters are to be matched as pairs
@@ -38,6 +38,8 @@ set showcmd
 " Enable mouse support (hold option to revert to old behaviour)
 set mouse=a
 
+" Highlight 80 char limit
+set colorcolumn=80
 
 " Enable syntax highlighting
 syntax on
