@@ -41,6 +41,15 @@ set mouse=a
 " Highlight 80 char limit
 set colorcolumn=80
 
+" Add visual menu for command autocomplete
+set wildmenu
+
+" Highlightcurrent line
+set cursorline
+
+" Close delete buffers once we are close the tab that includes them
+set nohidden
+
 " Enable syntax highlighting
 syntax on
 " Try to detect filetypes
