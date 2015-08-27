@@ -65,6 +65,9 @@ if isdirectory(s:clang_library_path)
     let g:clang_library_path=s:clang_library_path
 endif
 
+" Add JSHint as ajs cckecker for syntastic
+let g:syntastic_javascript_checkers = ['jshint']
+
 " Make it look nicer
 set background=dark
 try
