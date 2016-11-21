@@ -66,7 +66,7 @@ if isdirectory(s:clang_library_path)
 endif
 
 " Add JSHint as ajs cckecker for syntastic
-let g:syntastic_javascript_checkers = ['jshint']
+let g:syntastic_javascript_checkers = ['jshint', 'jscs']
 
 " Automatically set json files to correct file type
 au BufNewFile,BufRead *.json set filetype=json
