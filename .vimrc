@@ -1,7 +1,3 @@
-call pathogen#infect()
-call pathogen#helptags()
-
-
 " Keep the same indent as the line I'm currently on
 set autoindent
 
@@ -38,8 +34,8 @@ set showcmd
 " Enable mouse support (hold option to revert to old behaviour)
 set mouse=a
 
-" Highlight 80 char limit
-set colorcolumn=80
+" Highlight 100 char limit
+set colorcolumn=100
 
 " Add visual menu for command autocomplete
 set wildmenu
@@ -58,24 +54,10 @@ filetype on
 " Try loading indent file for filetype
 filetype plugin indent on
 
-" Set the location of the clang library for Mac so that the autocomplete tool
-" works
-let s:clang_library_path='/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib'
-if isdirectory(s:clang_library_path)
-    let g:clang_library_path=s:clang_library_path
-endif
-
-" Add JSHint as ajs cckecker for syntastic
-let g:syntastic_javascript_checkers = ['jshint', 'jscs']
-
 " Automatically set json files to correct file type
 au BufNewFile,BufRead *.json set filetype=json
 
 
 " Make it look nicer
 set background=dark
-try
-    colorscheme solarized
-catch
-    colorscheme desert
-endtry
+colorscheme desert
