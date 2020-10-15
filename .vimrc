@@ -1,6 +1,11 @@
 " Keep the same indent as the line I'm currently on
 set autoindent
 
+" Reload files if these change on disk
+set autoread
+" Reload files when changing buffers
+au FocusGained,BufEnter * :checktime
+
 set ruler
 
 " Always display status bar
@@ -34,9 +39,6 @@ set showcmd
 " Enable mouse support (hold option to revert to old behaviour)
 set mouse=a
 
-" Highlight 100 char limit
-set colorcolumn=100
-
 " Add visual menu for command autocomplete
 set wildmenu
 
@@ -60,4 +62,8 @@ au BufNewFile,BufRead *.json set filetype=json
 
 " Make it look nicer
 set background=dark
-colorscheme desert
+colorscheme default
+
+" Highlight 100 char limit
+set colorcolumn=100
+highlight ColorColumn ctermbg=darkgrey guibg=darkgrey
